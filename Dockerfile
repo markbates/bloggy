@@ -11,7 +11,7 @@ ADD yarn.lock .
 RUN yarn install --no-progress
 ADD . .
 RUN go get $(go list ./... | grep -v /vendor/)
-RUN buffalo build --static -o /bin/app
+RUN buffalo build --static -o /bin/app --environment=production
 
 FROM alpine
 RUN apk add --no-cache bash
