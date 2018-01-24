@@ -20,4 +20,4 @@ heroku plugins:install heroku-container-registry --force
 # To give access to your Heroku apps, you
 # need to set the HEROKU_API_KEY environment variable.
 docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
-heroku container:push web --app getbuffalo
+heroku container:push web --app glacial-meadow-22925
